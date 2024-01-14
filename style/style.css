@@ -46,6 +46,7 @@ nav >ul li a{
     color: #3A3A3A;
     font-size: 3.5rem;
     font-weight: 700;
+    margin: 0;
 
 }
 
@@ -58,9 +59,9 @@ nav >ul li a{
 .btn-banner{
     width: 196px;
     height: 44px;
-    display: inline-flex;
+    /* display: inline-flex; */
     padding: 10px 24px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 8px;
     border-radius: 41px;
     background: #E02C6D;
@@ -69,6 +70,7 @@ nav >ul li a{
     color: #FFF;
     font-size: 1rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .banner-image-container{
@@ -266,6 +268,20 @@ nav >ul li a{
     nav{
         flex-direction: column;
     }
+
+    .banner-image-container{
+        width: 350px;
+        height: 350px;
+    }
+
+    .banner-title,.banner-descriptio{
+
+        margin-bottom: 20px;
+    }
+
+    .camera > img{
+        width: 100%;
+    }
     .banner-section{
         flex-direction: column-reverse;
     }
@@ -299,6 +315,8 @@ nav >ul li a{
     }
 
     .collection{
+        width: 100%;
+        margin: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         padding: 0px;
@@ -316,6 +334,9 @@ nav >ul li a{
 
     .features-content{
         margin-bottom: 30px;
+    }
+    .features-img > img{
+        width: 100%;
     }
 
     .footer-logo img{
